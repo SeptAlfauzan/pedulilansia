@@ -24,10 +24,6 @@ export default async function handler(req, res) {
                     removeCookies('token', { req, res })
                     res.status(200).json({ message: 'logout success' })
                 }
-                if (verify) {
-                    jsonwebtoken.verify(cookies.token, 'secret',);
-                    res.status(200)
-                }
                 break;
         }
     } catch (error) {

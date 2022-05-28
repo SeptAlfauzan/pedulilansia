@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react';
 import { useRouter } from 'next/dist/client/router';
 import { HomeOutlined, LogoutOutlined, MenuFoldOutlined, MenuUnfoldOutlined, ProfileOutlined, UserOutlined } from '@ant-design/icons';
+import Link from 'next/link';
 
 export default function Sidebar() {
     const [minimize, setMinimize] = React.useState(false);
@@ -32,37 +33,48 @@ export default function Sidebar() {
                 </button>
                 <ul className="space-y-2">
                     <li>
-                        <a href="/admin/dashboard" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
-                            <HomeOutlined />
-                            <div className={`${minimize ? 'hidden' : null}`}>
-                                <span className="ml-3">Dashboard</span>
+                        <Link href={"/admin/dashboard"}>
+                            <div className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
+                                <HomeOutlined />
+                                <div className={`${minimize ? 'hidden' : null}`}>
+                                    <span className="ml-3">Dashboard</span>
+                                </div>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="#" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
-                            <ProfileOutlined />
-                            <div className={`${minimize ? 'hidden' : null}`}>
-                                <span className="flex-1 ml-3 whitespace-nowrap">Keluhan</span>
-                                <span className="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
+                        <Link href={'#'}>
+
+                            <div className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
+                                <ProfileOutlined />
+                                <div className={`${minimize ? 'hidden' : null}`}>
+                                    <span className="flex-1 ml-3 whitespace-nowrap">Keluhan</span>
+                                    <span className="inline-flex justify-center items-center px-2 ml-3 text-sm font-medium text-gray-800 bg-gray-200 rounded-full dark:bg-gray-700 dark:text-gray-300">Pro</span>
+                                </div>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/admin/admins" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
-                            <UserOutlined />
-                            <div className={`${minimize ? 'hidden' : null}`}>
-                                <span className="flex-1 ml-3 whitespace-nowrap">Admin</span>
+                        <Link href="/admin/admins">
+
+                            <div className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
+                                <UserOutlined />
+                                <div className={`${minimize ? 'hidden' : null}`}>
+                                    <span className="flex-1 ml-3 whitespace-nowrap">Admin</span>
+                                </div>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a href="/admin/elders" className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
-                            <UserOutlined />
-                            <div className={`${minimize ? 'hidden' : null}`}>
-                                <span className="flex-1 ml-3 whitespace-nowrap">Lansia</span>
+                        <Link href="/admin/elders">
+
+                            <div className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
+                                <UserOutlined />
+                                <div className={`${minimize ? 'hidden' : null}`}>
+                                    <span className="flex-1 ml-3 whitespace-nowrap">Lansia</span>
+                                </div>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <button onClick={handleLogout} className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg hover:bg-gray-100">
