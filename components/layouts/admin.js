@@ -1,7 +1,9 @@
 import React from 'react';
 import Sidebar from '../micro/sidebar';
+import { getCookies } from 'cookies-next';
 
 export default function AdminLayout({ children }) {
+
     return (
         <div className='w-screen h-screen md:px-10 md:py-20 px-8 py-10 flex bg-blue-100'>
             <Sidebar />
