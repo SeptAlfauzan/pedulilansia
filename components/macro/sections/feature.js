@@ -2,13 +2,13 @@ import Image from 'next/image'
 
 export default function Feature(props) {
     return (
-        <section className="h-screen feature-section bg-black-1">
+        <section className="min-h-screen feature-section bg-blue-50 relative pb-10">
             <main className="px-4 pt-32 pb-0 mx-auto max-w-screen-2xl lg:px-24 how-can md:pb-24">
-                <h1 className="font-semibold leading-snug text-center text-white-2 md:leading-9 text-40"> How can we help your
+                <h1 className="font-semibold leading-snug text-center md:leading-9 text-40"> How can we help your
                     business </h1>
                 <div className="relative z-10 grid grid-cols-1 card md:grid-cols-12 gap-11 mt-14">
                     <div className="md:col-span-6 lg:col-span-4">
-                        <div className="p-8 bg-dark rounded-3xl"> <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                        <div className="p-8 bg-white rounded-3xl"> <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="64" height="64" rx="32" fill="#1F1F33" />
                             <path
@@ -38,14 +38,14 @@ export default function Feature(props) {
                                 d="M27.5091 43.1213C27.6074 43.0298 27.6862 42.9194 27.7408 42.7967C27.7955 42.674 27.8249 42.5416 27.8273 42.4074C27.8296 42.2731 27.8049 42.1397 27.7546 42.0152C27.7043 41.8907 27.6295 41.7776 27.5345 41.6826C27.4396 41.5876 27.3264 41.5128 27.2019 41.4625C27.0774 41.4122 26.944 41.3875 26.8098 41.3899C26.6755 41.3922 26.5431 41.4216 26.4204 41.4763C26.2977 41.5309 26.1873 41.6097 26.0958 41.708L24.6838 43.1187C24.5072 43.3082 24.411 43.5589 24.4156 43.818C24.4201 44.0771 24.5251 44.3243 24.7083 44.5075C24.8915 44.6907 25.1387 44.7957 25.3978 44.8002C25.6568 44.8048 25.9076 44.7086 26.0971 44.532L27.5105 43.1213H27.5091Z"
                                 fill="#DB00FF" />
                         </svg>
-                            <div className="mt-10 text-2xl font-bold card-title text-white-2"> Work fast, done fast </div>
+                            <div className="mt-10 text-2xl font-bold card-title"> Work fast, done fast </div>
                             <p className="mt-4 text-base font-normal leading-6 text-grey-1"> Consectetur odio amet risus ut
                                 mattis sed tempor, sed luctus consequat in pellentesque neque nec auctor eu mi mauris,
                                 sapien aliquam duis eget id morbi auctor ac tellus ut </p>
                         </div>
                     </div>
                     <div className="md:col-span-6 lg:col-span-4">
-                        <div className="p-8 bg-dark rounded-3xl"> <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                        <div className="p-8 bg-white rounded-3xl"> <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="64" height="64" rx="32" fill="#162523" />
                             <path
@@ -54,21 +54,21 @@ export default function Feature(props) {
                             <path d="M43.4286 43.4286L37.7143 37.7143" stroke="#00FFE0" strokeWidth="2.4"
                                 strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
-                            <div className="mt-10 text-2xl font-bold card-title text-white-2"> Work out the details </div>
+                            <div className="mt-10 text-2xl font-bold card-title"> Work out the details </div>
                             <p className="mt-4 text-base font-normal leading-6 text-grey-1"> Consectetur odio amet risus ut
                                 mattis sed tempor, sed luctus consequat in pellentesque neque nec auctor eu mi mauris,
                                 sapien aliquam duis eget id morbi auctor ac tellus ut </p>
                         </div>
                     </div>
                     <div className="md:col-span-6 lg:col-span-4">
-                        <div className="p-8 bg-dark rounded-3xl"> <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                        <div className="p-8 bg-white rounded-3xl"> <svg width="64" height="64" viewBox="0 0 64 64" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="64" height="64" rx="32" fill="#2E331F" />
                             <path
                                 d="M32.0138 19.0386C32.9749 19.0493 33.9321 19.1623 34.8709 19.375C35.0707 19.4202 35.2515 19.5277 35.3881 19.6824C35.5247 19.8371 35.6104 20.0313 35.633 20.2378L35.8556 22.2678C35.887 22.554 35.9842 22.8287 36.1393 23.0698C36.2943 23.3109 36.503 23.5117 36.7484 23.656C36.9939 23.8004 37.2693 23.8842 37.5525 23.9007C37.8356 23.9173 38.1187 23.8661 38.3788 23.7514L40.2133 22.9338C40.3996 22.8505 40.6067 22.828 40.8061 22.8695C41.0055 22.9109 41.1873 23.0142 41.3263 23.1651C42.6514 24.6023 43.6381 26.3259 44.2123 28.2062C44.2725 28.4038 44.2707 28.6155 44.2071 28.812C44.1435 29.0086 44.0213 29.1801 43.8574 29.303L42.2311 30.5207C42.0024 30.6913 41.8165 30.9141 41.6883 31.1711C41.5601 31.4282 41.4933 31.7122 41.4933 32.0004C41.4933 32.2885 41.5601 32.5725 41.6883 32.8296C41.8165 33.0866 42.0024 33.3094 42.2311 33.48L43.8587 34.6964C44.0231 34.8192 44.1457 34.9909 44.2096 35.1877C44.2734 35.3845 44.2753 35.5966 44.2149 35.7945C43.6405 37.6747 42.6538 39.3982 41.3289 40.8356C41.1903 40.9861 41.009 41.0894 40.8102 41.131C40.6113 41.1727 40.4046 41.1508 40.2186 41.0682L38.3762 40.248C38.1164 40.1323 37.8335 40.0804 37.5502 40.0964C37.267 40.1124 36.9914 40.1959 36.7459 40.3401C36.5003 40.4843 36.2916 40.6852 36.1367 40.9264C35.9819 41.1677 35.8851 41.4426 35.8543 41.729L35.633 43.7576C35.6107 43.9619 35.5267 44.1542 35.3927 44.3081C35.2586 44.4621 35.0809 44.5702 34.884 44.6178C32.9874 45.0759 31.0114 45.0759 29.1147 44.6178C28.9178 44.5702 28.7401 44.4621 28.6061 44.3081C28.472 44.1542 28.3881 43.9619 28.3658 43.7576L28.1458 41.7316C28.1137 41.446 28.0161 41.1721 27.8607 40.9318C27.7054 40.6914 27.4967 40.4915 27.2514 40.348C27.0061 40.2044 26.7311 40.1213 26.4484 40.1054C26.1657 40.0894 25.8833 40.141 25.6238 40.256L23.7828 41.0749C23.5966 41.1577 23.3896 41.1798 23.1905 41.1381C22.9914 41.0965 22.8099 40.9931 22.6711 40.8422C21.3456 39.4033 20.3589 37.6779 19.7852 35.7958C19.7248 35.5979 19.7267 35.3858 19.7905 35.189C19.8543 34.9922 19.9769 34.8205 20.1413 34.6977L21.7689 33.48C21.9979 33.3096 22.1841 33.0868 22.3124 32.8298C22.4407 32.5727 22.5076 32.2886 22.5076 32.0004C22.5076 31.7121 22.4407 31.428 22.3124 31.1709C22.1841 30.9139 21.9979 30.6911 21.7689 30.5207L20.1413 29.3056C19.9772 29.1827 19.8548 29.0109 19.7912 28.8141C19.7276 28.6173 19.726 28.4053 19.7865 28.2076C20.3607 26.3273 21.3474 24.6037 22.6724 23.1664C22.8115 23.0155 22.9932 22.9122 23.1926 22.8708C23.392 22.8294 23.5992 22.8518 23.7854 22.9351L25.6186 23.7527C25.8792 23.8674 26.1627 23.9184 26.4462 23.9017C26.7298 23.885 27.0055 23.801 27.2513 23.6565C27.497 23.5119 27.706 23.3109 27.8614 23.0695C28.0167 22.828 28.1141 22.553 28.1458 22.2664L28.3684 20.2378C28.3908 20.0308 28.4765 19.8363 28.6134 19.6813C28.7503 19.5263 28.9316 19.4187 29.1318 19.3736C30.0706 19.1623 31.0304 19.0506 32.0138 19.0386ZM31.9981 28.0121C30.9562 28.0121 29.9571 28.4323 29.2204 29.1803C28.4837 29.9282 28.0698 30.9426 28.0698 32.0004C28.0698 33.0581 28.4837 34.0725 29.2204 34.8204C29.9571 35.5684 30.9562 35.9886 31.9981 35.9886C33.0399 35.9886 34.0391 35.5684 34.7758 34.8204C35.5124 34.0725 35.9263 33.0581 35.9263 32.0004C35.9263 30.9426 35.5124 29.9282 34.7758 29.1803C34.0391 28.4323 33.0399 28.0121 31.9981 28.0121Z"
                                 fill="#FFC400" />
                         </svg>
-                            <div className="mt-10 text-2xl font-bold card-title text-white-2"> Customized to your needs </div>
+                            <div className="mt-10 text-2xl font-bold card-title"> Customized to your needs </div>
                             <p className="mt-4 text-base font-normal leading-6 text-grey-1"> Consectetur odio amet risus ut
                                 mattis sed tempor, sed luctus consequat in pellentesque neque nec auctor eu mi mauris,
                                 sapien aliquam duis eget id morbi auctor ac tellus ut </p>
