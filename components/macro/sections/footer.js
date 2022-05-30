@@ -13,7 +13,7 @@ export default function Footer() {
                                 <div className=" cursor-pointer flex items-center gap-3">
                                     <div className="relative w-20 h-20">
                                         <Image objectFit='contain' layout='fill'
-                                            src="/logo_pedulilansia.svg"
+                                            src="/images/logo.png"
                                             alt="logo pedulilansia" />
                                     </div>
                                     <h3 className="text-white text-2xl cursor-pointer ">pedulilansia.online</h3>

@@ -5,7 +5,7 @@ export default function Header(props) {
     return (
         <section className=" relative">
             <header className="lg:pb-28 pb-10">
-                <Navbar />
+
                 {/* <!-- START: HERO BACKGROUND --> */}
                 <div className="mx-auto hero-bg max-w-screen-2xl max-h-full">
                     <div className="flex justify-end invisible lg:visible w-full ">

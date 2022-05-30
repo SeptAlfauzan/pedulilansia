@@ -12,7 +12,7 @@ export default function Navbar() {
             <div className="flex flex-col items-stretch lg:flex-row lg:items-center">
                 <div className='w-10 h-10 z-19 relative top-3'>
                     <Image objectFit='contain' layout='fill'
-                        src="/logo_pedulilansia.svg"
+                        src="/images/logo.png"
                         alt="logo pedulilansia" />
                 </div>
                 <div className="flex items-center justify-between">
@@ -30,9 +30,9 @@ export default function Navbar() {
                             className="flex flex-col items-baseline justify-between   md:mt-0 mt-10 lg:flex-row lg:items-center">
                             <div
                                 className="flex flex-col w-full ml-0 font-normal lg:flex-row text-white-1 lg:ml-44 lg:w-max z-10">
-                                <a href="#" className="text-black py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0 md:text-left text-right md:pr-auto pr-3">SERVICE</a>
-                                <a href="#" className="text-black py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0 md:text-left text-right md:pr-auto pr-3">PORTFOLIO</a>
-                                <a href="#" className="text-black py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0 md:text-left text-right md:pr-auto pr-3">ABOUT US</a>
+                                <a href="#" className="text-black py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0 md:text-left text-right md:pr-auto pr-3 hover:text-blue-200">SERVICE</a>
+                                <a href="#" className="text-black py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0 md:text-left text-right md:pr-auto pr-3 hover:text-blue-200">PORTFOLIO</a>
+                                <a href="#" className="text-black py-3 pl-2 mx-2 cursor-pointer lg:mx-14 lg:pl-0 md:text-left text-right md:pr-auto pr-3 hover:text-blue-200">ABOUT US</a>
                             </div>
                         </div>
                     </div>
