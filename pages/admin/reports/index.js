@@ -36,7 +36,7 @@ export async function getStaticProps(context) {
     try {
         const report = await getAll()
         return {
-            props: { report }, // will be passed to the page component as props
+            props: { report }, revalidate: 2 // will be passed to the page component as props
         }
     } catch (error) {
         console.log(error)
