@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Navbar from "../../micro/navbar";
 
 export default function Header(props) {
@@ -32,12 +33,13 @@ export default function Header(props) {
               </div>
               <div className="mt-20">
                 {" "}
-                <a
-                  href=""
-                  className="px-10 py-4 text-2xl font-semibold rounded-lg bg-white-2 text-darkGreen"
+                <Link
+                  href="/report"
                 >
-                  Get Started
-                </a>{" "}
+                  <button className="px-10 py-4 text-2xl font-semibold rounded-lg bg-white-2 text-darkGreen">
+                    Isi form keluhan kesehatan
+                  </button>
+                </Link>{" "}
               </div>
             </div>
           </div>
